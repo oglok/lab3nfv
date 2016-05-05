@@ -1,0 +1,508 @@
+    1  history
+    2  ok clean 
+    3  clear
+    4  ok clean 
+    5  l
+    6  tree
+    7  sudo apt-get install tree
+    8  tree
+    9  clear 
+   10  sudo ovs-vsctl set-manager tcp:127.0.0.1:6640
+   11  sudo ovs-vsctl set-manager tcp://127.0.0.1:6640
+   12  sudo ~/Scripts/start_ovs.sh 
+   13  sudo ovs-vsctl set-manager tcp://127.0.0.1:6640
+   14  sudo ovs-vsctl show 
+   15  sudo ovs-vsctl set-manager tcp:127.0.0.1:6640
+   16  sudo ovs-vsctl show 
+   17  sudo ovs-vsctl set-manager tcp:127.0.0.1:6640
+   18  sudo ovs-vsctl show 
+   19  sudo ovs-vsctl --version
+   20  sudo ovs-vsctl set-manager ptcp:6640
+   21  sudo ovs-vsctl show 
+   22  sudo ovs-vsctl set-manager ptcp:6640
+   23  sudo ovs-vsctl show
+   24  ps aux 
+   25  ~/Scripts/stop_ovs.sh 
+   26  ~/Scripts/start_ovs.sh 
+   27  sudo ovs-vsctl set-manager tcp:127.0.0.1:6640
+   28  sudo ovs-vsctl show
+   29  sudo mn --controller=remote --topo linear,3
+   30  sudo net.sh 
+   31  sudo net.sh 10 wired
+   32  ping www,
+   33  ping www.google.com
+   34  cd Setup/onos/
+   35  ls
+   36  vim ~/.bashrc
+   37  cd $ONOS_
+   38  cd $ONOS_APPS
+   39  cd Setup/onos/
+   40  l drivers/src/main/java/org/onosproject/driver/
+   41  cd drivers/src/main/java/org/onosproject/driver/
+   42  l
+   43  l ovsdb/
+   44  vim ovsdb/OvsdbControllerConfig.java 
+   45  sudo net.sh 10 wired
+   46  ok clean 
+   47  cd ~/Setup/onos/
+   48  ~/Scripts/start_ovs.sh 
+   49  ip a
+   50  sudo ovs-vsctl show
+   51  sudo ovs-vsctl del-br s1
+   52  sudo ovs-vsctl del-br s2
+   53  sudo ovs-vsctl del-br s3
+   54  sudo ovs-vsctl show
+   55  sudo ovs-vsctl help
+   56  sudo ovs-vsctl --help
+   57  sudo ovs-vsctl del-manager
+   58  sudo ovs-vsctl set-manager tcp:127.0.0.1:6640
+   59  sudo ovs-vsctl show
+   60  sudo mn --controller=remote --topo linear,3
+   61  ryu-manager --ofp-tcp-listen-port 6666 ~/Setup/ryu/ryu/app/simple_switch_13.py 
+   62  vim ~/poo.json 
+   63  cd 
+   64  cd Downloads/
+   65  l
+   66  unzip LabSDN+NFV-Lab1.zip 
+   67  l
+   68  java -Xmx1G -XX:MaxPermSize=256M -jar netconf-testtool-1.1.0-boron-daily-v201603270034-executable.jar 
+   69  java -Xmx1G -XX:MaxPermSize=256M -jar netconf-testtool-1.1.0-boron-daily-v201603270034-executable.jar -Xdebug=true
+   70  java -Xmx1G -XX:MaxPermSize=256M -jar netconf-testtool-1.1.0-boron-daily-v201603270034-executable.jar --debug DEBUG
+   71  java -Xmx1G -XX:MaxPermSize=256M -jar netconf-testtool-1.1.0-boron-daily-v201603270034-executable.jar --device-count 2 
+   72  ssh admin@localhost -p 17830 -s netconf 
+   73  cd ~/Setup/onos/
+   74  cp tools/test/configs/netconf-cfg.json ~/poo.json
+   75  vim ~/poo.json 
+   76  onos-netcfg localhost ~/poo.json 
+   77  onos-netcfg 127.0.0.1 ~/poo.json 
+   78  curl -X POST -H "content-type:application/json" http://localhost:8181/onos/v1/network/configuration -d @~/poo.json  --user karaf:karaf
+   79  curl -X POST -H "content-type:application/json" http://localhost:8181/onos/v1/network/configuration -d ~/poo.json  --user karaf:karaf
+   80  curl -X POST -H "content-type:application/json" http://localhost:8181/onos/v1/network/configuration -d @~/poo.json  --user karaf:karaf
+   81  clear
+   82  curl -X POST -H "content-type:application/json" http://localhost:8181/onos/v1/network/configuration -d @~/poo.json  --user karaf:karaf
+   83  clear
+   84  curl -X POST -H "content-type:application/json" http://localhost:8181/onos/v1/network/configuration -d @~/poo.json  --user karaf:karaf
+   85  onos-netcfg 127.0.0.1 ~/poo.json 
+   86  curl -X POST -H "content-type:application/json" http://localhost:8181/onos/v1/network/configuration -d @~/poo.json  --user karaf:karaf
+   87  onos-netcfg 127.0.0.1 ~/poo.json 
+   88  curl -X POST -H "content-type:application/json" http://localhost:8181/onos/v1/network/configuration -d @/home/student/poo.json  --user karaf:karaf
+   89  onos-netcfg 127.0.0.1 ~/poo.json
+   90  onos-netcfg http://127.0.0.1 ~/poo.json
+   91  curl -X POST -H "content-type:application/json" http://localhost:8181/onos/v1/network/configuration -d @/home/student/poo.json  --user karaf:karaf
+   92  curl -X POST -H "content-type:application/json" http://localhost:8181/onos/v1/network/configuration -d /home/student/poo.json  --user karaf:karaf
+   93  curl -X POST -H "content-type:application/json" http://localhost:8181/onos/v1/network/configuration -d @/home/student/poo.json  --user karaf:karaf
+   94  sudo mn --controller remote --topo linear,3
+   95  sudo mn --controller remote --topo torus
+   96  sudo mn --controller remote --topo torus,3,3,2
+   97  sudo mn --controller remote --topo linear,3
+   98  sudo mn --topo linear,3
+   99  ps aux 
+  100  ps aux | grep pyretic
+  101  sudo mn --controller remote --topo linear,3
+  102  sudo mn -c
+  103  sudo mn --controller remote --topo linear,3
+  104  vim pyretic/core/language.py
+  105  find . -name \*mac\*
+  106  vim ./pyretic/modules/mac_learner.py
+  107  netstat -tulnap
+  108  kill -9 12742
+  109  netstat -tulnap
+  110  sudo mn -c
+  111  sudo mn --controller=remote --topo=linear 
+  112  sudo mn --help
+  113  sudo mn --controller remote --switch ovs,protocols=OpenFlow10 --topo linear,3
+  114  sudo wiresharl
+  115  sudo wireshark &
+  116  sudo mn --controller remote --topo linear,3 --mac
+  117  sudo mn -c
+  118  sudo mn --controller remote --topo linear,3 --mac
+  119  sudo mn --controller=remote --topo linear,3 --mac
+  120  sudo mn
+  121  mn --help
+  122  sudo mn --controller=remote --topo linear,3 --mac
+  123  sudo mn -c
+  124  sudo mn --controller=remote --topo linear,3 --mac
+  125  sudo mn -c
+  126  sudo mn --controller=remote --topo linear,3 --mac
+  127  sudo mn -c 
+  128  sudo mn --controller=remote --topo linear,3 --mac
+  129  sudo mn -c 
+  130  sudo mn --controller=remote --topo linear,3 --mac
+  131  sudo mn -c 
+  132  sudo mn --controller=remote --topo linear,3 --mac
+  133  cd ~/Setup/pyretic/ç
+  134  cd ~/Setup/pyretic/
+  135  pyretic.py -f pyretic.modules.hub
+  136  pyretic.py -m p0 pyretic.modules.mac_learner 
+  137  pyretic.py -m r0 pyretic.modules.mac_learner 
+  138  pyretic.py -m i pyretic.modules.mac_learner 
+  139  vim pyretic.py 
+  140  pyretic.py -m r0 pyretic.modules.mac_learner 
+  141  sudo netstat -tulnap
+  142  sudo pkill -f -9 python
+  143  pyretic.py -m r0 pyretic.modules.mac_learner 
+  144  sudo pyretic.py -m r0 pyretic.modules.mac_learner 
+  145  sudo python pyretic.py -m r0 pyretic.modules.mac_learner 
+  146  pyretic.py -m r0 pyretic.modules.mac_learner 
+  147  pyretic.py --port 6634 -m r0 pyretic.modules.mac_learner 
+  148  pyretic.py pyretic.examples.simple_ui_firewall
+  149  pyretic.py -f -m r0 pyretic.modules.mac_learner 
+  150  pyretic.py -f pyretic.examples.simple_ui_firewall
+  151  pyretic.py pyretic.examples.simple_ui_firewall
+  152  pyretic.py -f pyretic.examples.simple_ui_firewall
+  153  pyretic.py  pyretic.examples.simple_ui_firewall
+  154  cp pyretic/examples/simple_ui_firewall.py pyretic/examples/simple_ui_firewall_rev.py
+  155  pyretic.py  pyretic.examples.simple_ui_firewall_rev
+  156  pyretic.py  pyretic.examples.simple_ui_firewall
+  157  pyretic.py  pyretic.examples.simple_ui_firewall_rev
+  158  pyretic.py  pyretic.examples.simple_ui_firewall
+  159  clear 
+  160  netstat -tulnap 
+  161  git status
+  162  pyretic.py  pyretic.examples.simple_ui_firewall
+  163  sudo pkill -9 -f python
+  164  pyretic.py  pyretic.examples.simple_ui_firewall
+  165  sudo pkill -9 -f python
+  166  pyretic.py  pyretic.examples.simple_ui_firewall
+  167  pkill -9 -f python 
+  168  pyretic.py  pyretic.examples.simple_ui_firewall
+  169  pyretic.py 
+  170  pyretic.py -h
+  171  vim pyretic.py 
+  172  find pyretic/examples/ -name \*.py -grep -iH count_packets {} \;
+  173  find pyretic/examples/ -name \*.py -exec grep -iH count_packets {} \;
+  174  find pyretic/examples/ -name \*.py -exec grep -iH aggregate_queries {} \;
+  175  vim pyretic/examples/monitor.py
+  176  l
+  177  cp -r of_client/ ~/Setup/pox/pox/
+  178  cd ~/Setup/pox/pox/
+  179  l
+  180  cd ..
+  181  l
+  182  python pox.py pox.of_client.pox_client
+  183  ps aux | grep pytho
+  184  kill -9 9296
+  185  python pox.py pox.of_client.pox_client
+  186  netstat -tulnap
+  187  netstat -tulnap 
+  188  clear 
+  189  python pox.py pox.of_client.pox_client
+  190  netstat -tulnap 
+  191  netstat -tulnap | grep 41414
+  192  sudo netstat -tulnap | grep 41414
+  193  netstat -tulnap | grep 41414
+  194  python pox.py pox.of_client.pox_client
+  195  netstat -tulnap
+  196  python pox.py pox.of_client.pox_client
+  197  clear 
+  198  python pox.py pox.of_client.pox_client
+  199  sudo wireshark 
+  200  sudo mn -c
+  201  sudo mn --controller=remote --topo linear
+  202  vim ~/Setup/pyretic/pyretic/examples/simple_ui_firewall.py 
+  203  vim ~/Setup/pyretic/pyretic/examples/simple_ui_firewall.py
+  204  find ~/Setup/pyretic/pyretic/examples/ -name \*.py -exec grep -iH arp {} \; 
+  205  vim /home/student/Setup/pyretic/pyretic/examples/port_knocking.py
+  206  clear 
+  207  cd ~/
+  208  cd Doewn
+  209  cd Downloads/
+  210  l
+  211  vim scenario1
+  212  vim scenario1topo.py 
+  213  vim scenario1.py 
+  214  sudo net.sh 10 wired 
+  215  l
+  216  cd ~/Setup/
+  217  l
+  218  mkdir onos-app
+  219  cd onos-app/
+  220  ls
+  221  onos-create-app 
+  222  onos-create-app cli org.foo.app foo-app 1.0.0
+  223  tree
+  224  onos-create-app ui org.foo.app foo-app 1.0.0
+  225  onos-create-app uitab org.foo.app foo-app 1.0.0
+  226  tree
+  227  l
+  228  cd foo-app/
+  229  l
+  230  vim pom.xml 
+  231  mvn clean install
+  232  onos-app localhost install! target/foo-app-1.0-SNAPSHOT.oar 
+  233  vim ~/.bashrc
+  234  source ~/.bash
+  235  source ~/.bashrc
+  236  onos-app localhost install! target/foo-app-1.0-SNAPSHOT.oar 
+  237  tree
+  238  vim pom.xml 
+  239  mvn clean install 
+  240  onos-app localhost reinstall! target/foo-app-1.0-SNAPSHOT.oar 
+  241  mvn clean install && onos-app localhost reinstall! target/foo-app-1.0-SNAPSHOT.oar 
+  242  mvn clean install 
+  243  onos-app localhost reinstall! target/foo-app-1.0-SNAPSHOT.oar 
+  244  mvn clean install && onos-app localhost reinstall! target/foo-app-1.0-SNAPSHOT.oar 
+  245  mvn clean install 
+  246  onos-app localhost reinstall! target/foo-app-1.0-SNAPSHOT.oar 
+  247  mvn clean install && onos-app localhost reinstall! target/foo-app-1.0-SNAPSHOT.oar 
+  248  mvn -e -X clean install 
+  249  mvn clean install
+  250  onos-app localhost reinstall! target/foo-app-1.0-SNAPSHOT.oar 
+  251  mvn clean install && onos-app localhost reinstall! target/foo-app-1.0-SNAPSHOT.oar 
+  252  mvn clean -x -e install
+  253  mvn clean -X -e install
+  254  mvn clean install && onos-app localhost reinstall! target/foo-app-1.0-SNAPSHOT.oar 
+  255  cp src/main/java/org/foo/app/AppComponent.java src/main/java/org/foo/app/BACKUP2-AppComponent.java
+  256  mvn clean install && onos-app localhost reinstall! target/foo-app-1.0-SNAPSHOT.oar 
+  257  mv /home/student/Setup/onos-app/foo-app/src/main/java/org/foo/app/BACKUP2-AppComponent.java /home/student/Setup/onos-app/foo-app/src/main/java/org/foo/app/BACKUP2-AppComponent.java.txt
+  258  mvn clean install && onos-app localhost reinstall! target/foo-app-1.0-SNAPSHOT.oar 
+  259  mvn clean -e install && onos-app localhost reinstall! target/foo-app-1.0-SNAPSHOT.oar 
+  260  ok clean 
+  261  ~/Scripts/start_ovs.sh 
+  262  cd foo-app/
+  263  l
+  264  vim src/main/java/org/foo/app/AppCommand.java 
+  265  vim ../../onos/apps/fwd/src/main/java/org/onosproject/fwd/ReactiveForwarding.java src/main/java/org/foo/app/AppComponent.java 
+  266  l src/test/java/org/foo/app/AppComponentTest.java 
+  267  vim src/test/java/org/foo/app/AppComponentTest.java 
+  268  mvn clean install
+  269  vim ../../onos/apps/fwd/src/main/java/org/onosproject/fwd/ReactiveForwarding.java src/main/java/org/foo/app/AppComponent.java 
+  270  vim src/main/java/org/foo/app/AppComponent.java 
+  271  find . -name ReactivePacketProcessor.java
+  272  find ../../ -name ReactivePacketProcessor.java
+  273  vim src/main/java/org/foo/app/AppComponent.java 
+  274  l
+  275  cd ..
+  276  l
+  277  tar -cvf foo-app.tar foo-app/
+  278  l
+  279  ls -la
+  280  ping www.google.com
+  281  sudo net.sh 10 wired
+  282  ping www.google.com
+  283  sudo net.sh 10 wired
+  284  ping www.google.com
+  285  cp foo-app.tar /media/student/EricssonPen/
+  286  cd src/main/java/org/foo/app/
+  287  l
+  288  cp AppComponent.java BACKUP-AppComponent.java.txt
+  289  sudo mn --custom ~/Desktop/scenario2topo.py --topo scenario2topo --controller remote 
+  290  cd
+  291  find . -name \*.py -exec grep scenario2topo {} \;
+  292  sudo find . -name \*.py -exec grep scenario2topo {} \;
+  293  cd Setup/onos
+  294  l
+  295  find . -name DevicePortStatsCommand.java
+  296  vim ./cli/src/main/java/org/onosproject/cli/net/DevicePortStatsCommand.java
+  297  exit
+  298  sudo net.sh 9 wired
+  299  ifconfig
+  300  ifcongig -a eth0 192.168.9.2/24
+  301  ifconfig -a eth0 192.168.9.2/24
+  302  ifconfig -a eth0 192.168.0.2/24
+  303  sudo ifconfig -a eth0 192.168.0.2/24
+  304  ifconfig
+  305  sudo ifconfig -a eth0 192.168.0.2/24
+  306  ifconfig
+  307  ssh 192.168.0.1
+  308  ifconfig -a eth0 192.168.0.2
+  309  sudo ifconfig -a eth0 192.168.0.2
+  310  ifconfig
+  311  ssh 192.168.0.1
+  312  cd 
+  313  cd /home/student/.ssh
+  314  ls
+  315  edit known_hosts
+  316  vi known_hosts
+  317  rm /home/student/.ssh/known_hosts
+  318  ssh 192.168.0.1
+  319  sudo ifconfig -a eth0 192.168.0.2/24
+  320  ssh 192.168.0.1
+  321  ifconfig
+  322  ssh 192.168.0.1
+  323  ifconfig
+  324  ssh 192.168.0.1
+  325  ifconfig -a eth0 192.168.0.2/24
+  326  sudo ifconfig -a eth0 192.168.0.2/24
+  327  ifconfig
+  328  sudo ssh 192.168.0.1
+  329  ifconfig
+  330  sudo ifconfig -a eth0 192.168.0.2
+  331  ifconfig
+  332  sudo ip addr add 192.168.0.1 dev eth0 
+  333  sudo ip addr del 192.168.0.1 dev eth0 
+  334  ip a
+  335  sudo ip addr del 192.168.0.2/24 dev eth0 
+  336  sudo ip addr add 192.168.0.2/24 dev eth0 
+  337  sudo ssh 192.168.0.1
+  338  sudo rm /root/.ssh/known_hosts
+  339  sudo ssh 192.168.0.1
+  340  sudo ssh student@192.168.0.1
+  341  ping www.google.com
+  342  pwd
+  343  cd Setup/openmano/openvim/
+  344  vi openvimd.cfg
+  345  vi openmano.cfg
+  346  cd ..
+  347  cd openmano
+  348  vi openmano.cfg
+  349  ll
+  350  vi openmanod.cfg
+  351  cd ..
+  352  ll
+  353  service-openmano openvim start
+  354  tail /home/student/Setup/openmano/logs/openvim.0
+  355  service-openmano openmano start
+  356  tail /home/student/Setup/openmano/logs/openmano.0
+  357  ll
+  358  cd ~
+  359  ll
+  360  cd Downloads/
+  361  ll
+  362  sudo cp nfv_s16s17.tar.gz /~
+  363  cd ..
+  364  ll
+  365  cd Downloads/
+  366  sudo cp nfv_s16s17.tar.gz ~
+  367  ll ~
+  368  cd ..
+  369  ll
+  370  tar -xzvf nfv_s16s17.tar.gz 
+  371  cd nfv_s16s17/
+  372  ll
+  373  sudo vi development_mport_host.yaml 
+  374  cd ..
+  375  ll
+  376  cd Setup/openmano/
+  377  cd openvim/
+  378  cd openvim
+  379  ll
+  380  cd openvim
+  381  ./openvim host-add ~/nfv_s16s17/development_mport_host.yaml 
+  382  ./openvim host-list
+  383  ./openvim host-list st -vvv
+  384  ./openvim host-list -vvv
+  385  ./openvim tenant-create --name g9_vim_tenant --description "VIM tenant of groups 9 and 10"
+  386  ./openvim tenant-list
+  387  ./openvim config
+  388  export OPENVIM_TENANT=cde01fca-12cc-11e6-b40c-f8cab835d1d0
+  389  ./openvim config
+  390  cd ..
+  391  cd openmano
+  392  ./openmano tenant-create g9_nfvo_tenant --description "NFVO tenant of groups 9 and 10"
+  393  ./openmano config
+  394  ./openmano tenant-list
+  395  export OPENMANO_TENANT=479019e2-12cd-11e6-b6a0-f8cab835d1d0
+  396  ./openmano config
+  397  ./openmano datacenter-create g9_dc http://localhost:9080/openvim
+  398  ./openmano datacenter-list
+  399  ./openmano datacenter-list --all
+  400  ./openmano datacenter-attach g9_dc --vim-tenant-id cde01fca-12cc-11e6-b40c-f8cab835d1d0
+  401  ./openmano config
+  402  ./openmano datacenter-list 
+  403  export OPENMANO_DATACENTER=892f3428-12cd-11e6-b6a0-f8cab835d1d0
+  404  ./openmano config
+  405  cd ~
+  406  cd Downloads/
+  407  ll
+  408  scp centos.img student@172.16.17.19:/home/student
+  409  ifconfig
+  410  cd 
+  411  ll
+  412  tar -xvf lab3.tar 
+  413  ll
+  414  cd Setup/openmano/openmano
+  415  ./openmano vnf-create ~/lab3/HTTPserver.yaml 
+  416  ./openmano vnf-list
+  417  ./openmano vnf-list -vvv
+  418  ./openmano scenario-create ~/lab3/scenario_http_server_1.yaml 
+  419  ./openmano scenario-list
+  420  vi ~/lab3/scenario_http_server_2.yaml 
+  421  vi ~/lab3/scenario_http_server_3.yaml 
+  422  vi ~/lab3/scenario_http_server_1.yaml 
+  423  vi ~/lab3/bridge_con.yaml 
+  424  ./openmano scenario-list
+  425  ./openmano scenario-delete ff17fb74-12d3-11e6-b6a0-f8cab835d1d0
+  426  ./openmano scenario-list
+  427  ./openmano scenario-create ~/lab3/scenario_http_server_1.yaml 
+  428  vi ~/lab3/scenario_http_server_1.yaml
+  429  ./openmano scenario-create ~/lab3/scenario_http_server_1.yaml 
+  430  vi ~/lab3/scenario_http_server_1.yaml
+  431  ./openmano scenario-create ~/lab3/scenario_http_server_1.yaml 
+  432  vim ~/lab3/scenario_http_server_1.yaml
+  433  l
+  434  rm -rf ~/lab3/*.swp
+  435  vim ~/lab3/scenario_http_server_1.yaml
+  436  l ~/lab3/
+  437  vim ~/lab3/scenario_http_server_1.yaml
+  438  l ~/lab3/scenario_http_server_1.yaml*
+  439  vim ~/lab3/scenario_http_server_3.yaml
+  440  ./openmano scenario-create ~/lab3/scenario_http_server_1.yaml 
+  441  vim ~/nfv_s16s17/simple_scenario_cloud_centos.yaml 
+  442  vim ~/lab3/bridge_con.yaml 
+  443  ./openmano scenario-create ~/lab3/scenario_http_server_1.yaml 
+  444  ./openmano scenario-list
+  445  ./openmano scenario-deploy simple_http_server_1 simple_http_server_1
+  446  ./openmano instance-scenario-list c425f404-12d7-11e6-b6a0-f8cab835d1d0
+  447  ../openvim/openvim net-list
+  448  ../openvim/openvim net-show simple_http_server_1-bridge_con1
+  449  ../openvim/openvim net-edit simple_http_server_1-bridge_con1
+  450  ../openvim/openvim net-list
+  451  ../openvim/openvim net-delete simple_http_server_1-bridge_con1
+  452  ../openvim/openvim net-create ~/lab3/bridge_con.yaml 
+  453  ./openmano scenario-list
+  454  ./openmano instance-scenario-list c425f404-12d7-11e6-b6a0-f8cab835d1d0
+  455  ./openmano instance-scenario-delete c425f404-12d7-11e6-b6a0-f8cab835d1d0
+  456  ./openmano instance-scenario-list c425f404-12d7-11e6-b6a0-f8cab835d1d0
+  457  ./openmano scenario-deploy simple_http_server_1 simple_http_server_1
+  458  ./openmano instance-scenario-list 8b25d8de-12d9-11e6-b6a0-f8cab835d1d0
+  459  ping 192.168.122.10
+  460  ./openmano instance-scenario-list 8b25d8de-12d9-11e6-b6a0-f8cab835d1d0
+  461  vi ~/lab3/scenario_http_server_1.yaml 
+  462  ./openmano instance-scenario-delete 8b25d8de-12d9-11e6-b6a0-f8cab835d1d0
+  463  ./openmano scenario-list
+  464  ./openmano scenario-delete simple_http_server_1
+  465  ./openmano scenario-create ~/lab3/scenario_http_server_1.yaml 
+  466  ~/lab3/scenario_http_server_1.yaml
+  467  sudo ~/lab3/scenario_http_server_1.yaml
+  468  sudo vi ~/lab3/scenario_http_server_1.yaml
+  469  clear
+  470  ./openmano scenario-create ~/lab3/scenario_http_server_1.yaml 
+  471  ./openmano datacenter-net-list 
+  472  ./openmano datacenter-list
+  473  ./openmano datacenter-net-list 892f3428-12cd-11e6-b6a0-f8cab835d1d0
+  474  ./openmano datacenter-net-update -f g9_dc
+  475  ./openmano datacenter-net-list 
+  476  ./openmano datacenter-net-list 892f3428-12cd-11e6-b6a0-f8cab835d1d0
+  477  ./openmano scenario-create ~/lab3/scenario_http_server_1.yaml 
+  478  ./openmano scenario-list 
+  479  ./openmano scenario-deploy simple_http_server_1 simple_http_server_1
+  480  ./openmano instance-scenario-list 70a70876-12dd-11e6-b6a0-f8cab835d1d0
+  481  cat ~/lab3/bridge_con.yaml 
+  482  l
+  483  ../openvim/openvim net-create ~/lab3/bridge_con2.yaml 
+  484  ../openvim/openvim net-create ~/lab3/bridge_con3.yaml 
+  485  ../openvim/openvim net-list
+  486  ./openmano datacenter-net-list 892f3428-12cd-11e6-b6a0-f8cab835d1d0
+  487  ./openmano datacenter-net-update -f g9_dc
+  488  ./openmano datacenter-net-list 892f3428-12cd-11e6-b6a0-f8cab835d1d0
+  489  cd ~
+  490  cd lab3/
+  491  ll
+  492  cat bridge_con.yaml 
+  493  cat HTTPserver.yaml 
+  494  cat bridge_con.yaml 
+  495  cat scenario_http_server_1.yaml 
+  496  cat bridge_con.yaml 
+  497  cat bridge_con2.yaml 
+  498  cd ..
+  499  git clone git@github.com:oglok/lab3nfv.git
+  500  vi .ssh/id_rsa.pub 
+  501  git clone git@github.com:oglok/lab3nfv.git
+  502  cp lab3/* lab3nfv/
+  503  cd lab3nfv/
+  504  git status
+  505  git add .
+  506  git commit -m "initial commit"
+  507  git push
+  508  history > history_laptop.txt

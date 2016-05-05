@@ -1,0 +1,1021 @@
+36  ip addr
+   37  sudo vim /opt/master_NFVSDN/conffiles/interfaces 
+   38  dmesg 
+   39  sudo mount -t auto /dev/sdb1 /mnt/
+   40  cp -p /mnt/prueba /tmp/
+   41  sudo umount /mnt 
+   42  cd /tmp/
+   43  less prueba 
+   44  chmod +x prueba 
+   45  ./prueba 
+   46  sudo su -
+   47  ip addr
+   48  less /etc/network/interfaces
+   49  less /opt/master_NFVSDN/conffiles/interfaces 
+   50  ls -l /opt/master_NFVSDN/conffiles/interfaces 
+   51  sudo start master-init-clean
+   52  sudo initctl list
+   53  init-checkconf .d /etc/init/master-clean-init.conf 
+   54  sudo cp -p /opt/master_NFVSDN/conffiles/interfaces /etc/network/
+   55  sudo reboot
+   56  clear
+   57  ip addr em1
+   58  ip addr | grep em1
+   59  clear
+   60  ifconfig
+   61  ifconfig em1
+   62  exit
+   63  ip addr
+   64  ls /usr/local/bin/
+   65  sudo ip addr add 172.16.17.11/24 dev em1
+   66  ip addr
+   67  sudo mount -t auto /dev/sdb1 /mnt/
+   68  sudo cp -p /mnt/escenario_openMANO/generic.img /opt/VNF/
+   69  cd /opt/
+   70  ls
+   71  cd VNF/
+   72  sudo mkdir shared
+   73  sudo mv generic.img shared/
+   74  ls -l
+   75  cd shared/
+   76  ls
+   77  ls -l
+   78  cd
+   79  sudo umount /mnt 
+   80  ip addr
+   81  ip addr show dev em1
+   82  ps auxww | grep libvirt
+   83  sudo su openvim
+   84  less /etc/libvirt/libvirtd.conf 
+   85  less /etc/group
+   86  /usr/libexec/qemu-kvm -h
+   87  ip addr
+   88  sudo reboot
+   89  ip addr
+   90  ls -l /opt/VNF/
+   91  cd /opt/VNF/shared/
+   92  ls
+   93  ls -l
+   94  cd ..
+   95  ls
+   96  cd images
+   97  ls -l
+   98  chmod +w openvim
+   99  chmod +w . openvim
+  100  chmod +w .
+  101  cd ..
+  102  sudo chmod +w images
+  103  ls -l
+  104  cd images
+  105  ls -l
+  106  ifconfig
+  107  ifconfig em1
+  108  config em1 172.16.17.11/24
+  109  ifconfig em1 172.16.17.11/24
+  110  sudo ifconfig em1 172.16.17.11/24
+  111  ifconfig em1
+  112  kvm ok
+  113  kvm-ok 
+  114  ls -l
+  115  cd ..
+  116  ls -l
+  117  ls -l /var/lib/libvirt/images/
+  118  sudo chown -R root:admin /var/lib/libvirt/images
+  119  sudo chmod g+rwx /var/lib/libvirt/images
+  120  ls -l /var/lib/libvirt/images/
+  121  ls -l /opt/VNF/images
+  122  less /etc/group
+  123  ls -l /etc/libvirt/
+  124  sudo visudo
+  125  ip addr
+  126  ip addr show dev em1
+  127  ping 172.16.17.51
+  128  dme
+  129  dmesg 
+  130  sudo less /var/log/syslog 
+  131  sudo mount -t auto /dev/sdb1 /mnt/
+  132  sudo cp -p /mnt/escenario_openMANO/generic.img /opt/VNF/shared/
+  133  sudo umount /mnt 
+  134  cd /opt/VNF/shared/
+  135  ls
+  136  ls -l generic.img 
+  137  ip addr
+  138  ip addr show dev em1
+  139  init-checkconf /etc/init/master-clean-init.conf 
+  140  less /etc/init/master-clean-init.conf 
+  141  init-checkconf /etc/init/master-clean-init.conf 
+  142  less /etc/init/dmesg.conf 
+  143  sudo vim /etc/init/master-clean-init.conf 
+  144  init-checkconf /etc/init/master-clean-init.conf 
+  145  sudo vim /etc/network/interfaces
+  146  sudo reboot
+  147  ip addr
+  148  init-checkconf /etc/init/master-clean-init.conf 
+  149  init-checkconf -d /etc/init/master-clean-init.conf 
+  150  less /etc/network/interfaces
+  151  sudo vim /etc/init/master-clean-init.conf 
+  152  less /etc/init/network-interface.conf 
+  153  less /etc/init/networking.conf 
+  154  sudo vim /etc/init/master-clean-init.conf 
+  155  less /etc/init/networking.conf 
+  156  sudo vim /etc/init/master-clean-init.conf 
+  157  sudo vim /etc/network/interfaces
+  158  sudo reboot
+  159  sudo mv /tmp/net.sh /usr/local/bin/
+  160  ls -l /usr/local/bin/net.sh 
+  161  sudo chown root.root /usr/local/bin/net.sh 
+  162  exit
+  163  ip addr
+  164  ip addr show em1
+  165  locate
+  166  locate net.sh
+  167  sudo ip addr add 172.16.17.11/24 dev em1
+  168  sudo ip ro add default via 172.16.17.1
+  169  sudo vim /etc/resolv.conf 
+  170  ping www.google.com
+  171  sudo net.sh 
+  172  sudo net.sh 21
+  173  sudo net.sh 12
+  174  ip addr
+  175  ping www.google.com
+  176  ip addr sh dev em1
+  177  sudo net.sh 1
+  178  ip addr sh dev em1
+  179  exit
+  180  ip addr
+  181  ip ro
+  182  sudo reboot; exit
+  183  ip addr
+  184  exit
+  185  sudo poweroff
+  186  sudo cat /var/log/access.log
+  187  last
+  188  last | more
+  189  sudo poweroff 
+  190  cat /etc/hostname 
+  191  man hostname
+  192  sudo vim /usr/local/bin/net.sh 
+  193  sudo net.sh 11
+  194  sudo vim /usr/local/bin/net.sh 
+  195  sudo net.sh 11
+  196  sudo vim /usr/local/bin/net.sh 
+  197  sudo net.sh 11
+  198  sudo vim /usr/local/bin/net.sh 
+  199  man hostname
+  200  less /etc/hostname 
+  201  sudo hostname mport11
+  202  hostname --help
+  203  hostname
+  204  exit
+  205  ls
+  206  sudo vim /usr/local/bin/net.sh 
+  207  sudo vim /etc/init/master-clean-init.conf 
+  208  sudo cp -p /opt/master_NFVSDN/conffiles/interfaces /opt/master_NFVSDN/conffiles/hostname
+  209  sudo vim /opt/master_NFVSDN/conffiles/interfaces 
+  210  sudo vim /opt/master_NFVSDN/conffiles/hostname 
+  211  sudo vim /etc/hosts
+  212  sudo cp -p /etc/hosts /opt/master_NFVSDN/conffiles/
+  213  sudo vim /etc/init/master-clean-init.conf 
+  214  sudo vim /usr/local/bin/net.sh 
+  215  sudo vim /etc/hosts
+  216  sudo vim /usr/local/bin/net.sh 
+  217  sudo mv /usr/local/bin/net.sh /usr/local/sbin/
+  218  sudo net.sh 11
+  219  ls
+  220  sudo ls
+  221  less /etc/hosts
+  222  less /opt/master_NFVSDN/conffiles/hosts 
+  223  less /opt/master_NFVSDN/conffiles/hostname 
+  224  exit
+  225  sudo net.sh
+  226  sudo net.sh 11
+  227  ip addr
+  228  sudo apt-get install vlc
+  229  ip ro
+  230  ping www.google.com
+  231  su stack
+  232  vlc --version
+  233  exit
+  234  ip addr | less
+  235  sudo vim /etc/init/failsafe.conf 
+  236  exit
+  237  cd de
+  238  exit
+  239  sudo net.sh 20
+  240  ping www.google.com
+  241  ip addr show dev em1
+  242  exit
+  243  sudo net.sh 12
+  244  ip addr
+  245  net.sh 4
+  246  sudo net.sh 4
+  247  ifconfig em1
+  248  exit
+  249  clear
+  250  exit
+  251  ls
+  252  cd Prueba\ mininet/
+  253  sudo ./Prueba.py 
+  254  clear
+  255  exit
+  256  ifconfig br0
+  257  ifconfig br0
+  258  cd Prueba\ mininet/
+  259  ryu-manager SimpleSwitch.py
+  260  ext
+  261  exit
+  262  ovs-vsctl show
+  263  sudo ovs-vsctl show
+  264  sudo ovs-vsctl list-br
+  265  ls
+  266  cd ../stack/
+  267  ls
+  268  cd ../student/
+  269  git clone git://github.com/mininet/mininet
+  270  ls
+  271  mkdir Setup
+  272  rm -rf mininet/
+  273  cd Setup/
+  274  git clone git://github.com/mininet/mininet
+  275  ls /media/
+  276  ls /media/cdrom/
+  277  cd mininet/
+  278  ./util/install.sh 
+  279  sudo mn
+  280  sudo ovs-vsctl add-br br0
+  281  sudo ovs-vsctl list-br
+  282  ifconfig p3p1
+  283  ovs-vsctl add-port br0 p3p1
+  284  sudo ovs-vsctl add-port br0 p3p1
+  285  sudo ovs-vsctl list-br
+  286  sudo ovs-vsctl show
+  287  ifconfig br0
+  288  ifconfig p3p1
+  289  sudo ifconfig p3p1up
+  290  sudo ifconfig p3p1 up
+  291  exit
+  292  arp -a
+  293  ping 10.0.0.1
+  294  ping 10.0.0.2
+  295  clear
+  296  sudo fdisk -l
+  297  ls /mnt
+  298  ls /
+  299  ls/mnt
+  300  sudo mount -t /dev/sdb1 /mnt
+  301  sudo mount -t vfat /dev/sdb1 /mnt
+  302  cd /mnt
+  303  ls
+  304  sudo cp Prueba\ mininet/ ~
+  305  ls ~
+  306  sudo cp -rf Prueba\ mininet/ ~
+  307  ls ~
+  308  cd ~
+  309  sudo umount /mnt
+  310  ls /mnt
+  311  ls /etc
+  312  ls /etc/openvswitch
+  313  la /etc/openvswitch
+  314  ls -la /etc/openvswitch
+  315  ls -la /etc/openvswitch-controller
+  316  cd Prueba\ mininet/
+  317  ryu-manager SimpleSwitch.py
+  318  ifconfig br0
+  319  ovs-vsctl show
+  320  sudo ovs-vsctl show
+  321  sudo ovs-vsctl set-controller br-int tcp:127.0.0.1:6633
+  322  sudo ovs-vsctl set-controller br0 tcp:127.0.0.1:6633
+  323  sudo ovs-vsctl show
+  324  sudo ovs-vsctl set-controller br0 tcp:172.16.17.54:6633
+  325  sudo ovs-vsctl show
+  326  sudo ifconfig p3p1 10.0.1.14
+  327  ping 10.0.1.11
+  328  route -n
+  329  sudo ifconfig p3p1 del 10.0.1.14
+  330  route -n
+  331  sudo ifconfig p3p1 down
+  332  route -n
+  333  sudo ifconfig p3p1 up
+  334  route -n
+  335  sudo ip del 10.0.1.14 dev p3p1
+  336  sudo ip addr del 10.0.1.14 dev p3p1
+  337  route -n
+  338  sudo ovs-vsctl --help
+  339  sudo ovs-vsctl add-port br0 p2p1
+  340  sudo ovs-vsctl show
+  341  sudo ifconfig p3p1 10.0.1.14
+  342  ifconfig p3p1
+  343  sudo ovs-vsctl del-port br0 p2p1
+  344  sudo ovs-vsctl show
+  345  sudo ifconfig p3p1 10.0.0.3
+  346  sudo ovs-vsctl show
+  347  clear
+  348  sudo ovs-vsctl show
+  349  sudo ovs-vsctl set-controller br0 tcp:172.16.17.54:6633
+  350  sudo ovs-vsctl show
+  351  clear
+  352  sudo ovs-vsctl show
+  353  ifconfig p2p1
+  354  ovs-vsctl show
+  355  sudo ovs-vsctl show
+  356  sudo ovs-vsctl set-controller br0 tcp:172.16.17.51:6653
+  357  sudo ovs-vsctl show
+  358  cd /opt/VNF/
+  359  cd images
+  360  chown openvim .
+  361  sudo chown openvim .
+  362  ls
+  363  sudo chown student .
+  364  ls
+  365  sudo chown openvim .
+  366  ping 172.16.17.51
+  367  clear
+  368  ifconfig p2p1
+  369  ovs-vsctl show
+  370  show ovs-vsctl show
+  371  sudo ovs-vsctl show
+  372  cd Prueba\ mininet/
+  373  clear
+  374  sudo ./hwintf.py p2p1
+  375  sudo mn -c
+  376  clear
+  377  sudo ./hwintf.py p2p1
+  378  clear
+  379  ifconfig p3p1
+  380  sudo ip addr del 10.0.0.3 dev p3p1
+  381  ifconfig p3p1
+  382  sudo ovs-vsctl show
+  383  ifconfig br0
+  384  sudo ovs-vsctl add-br br0
+  385  sudo ovs-vsctl add-port br0 p2p1
+  386  sudo ovs-vsctl show
+  387  sudo ovs-vsctl add-port br0 p3p1
+  388  sudo ovs-vsctl show
+  389  sudo ovs-vsctl help
+  390  sudo ovs-vsctl --help
+  391  sudo ovs-vsctl set-controller br0 tcp:172.16.17.54:6633
+  392  sudo ovs-vsctl show
+  393  clear
+  394  sudo ./hwintf.py p3p1
+  395  sudo ovs-vsctl del-port br0 p2p1
+  396  sudo ./hwintf.py p2p1
+  397  sudo brctl list
+  398  sudo brctl show
+  399  sudo brctl addbr br1
+  400  sudo brctl show
+  401  sudo brctl addif br1 p2p1
+  402  sudo brctl show
+  403  clear
+  404  sudo ./hwintf.py br1
+  405  ovs-vsctl show
+  406  sudo ovs-vsctl show
+  407  sudo ovs-vsctl del-br br0
+  408  sudo ovs-vsctl show
+  409  brctl show
+  410  brctl delbr br1
+  411  sudo brctl delbr br1
+  412  sudo brctl delif br1 p2p1
+  413  sudo brctl delbr br1
+  414  brctl show
+  415  sudo ifconfig br1 down
+  416  sudo brctl delbr br1
+  417  brctl show
+  418  vi hwintf.py 
+  419  cd Prueba\ mininet/
+  420  clear
+  421  ./Prueba.py 
+  422  sudo ./Prueba.py 
+  423  gedit Prueba.py 
+  424  vi Prueba.py 
+  425  sudo ./Prueba.py 
+  426  vi Prueba.py 
+  427  sudo ./Prueba.py 
+  428  clear
+  429  vi Prueba.py 
+  430  sudo chmod +w Prueba.py 
+  431  vi Prueba.py 
+  432  ls -la Prueba.py 
+  433  sudo vi Prueba.py 
+  434  sudo ./Prueba.py 
+  435  sudo vi Prueba.py 
+  436  sudo ./Prueba.py 
+  437  sudo vi Prueba.py 
+  438  sudo ./Prueba.py 
+  439  clear
+  440  sudo ./Prueba.py 
+  441  sudo vi Prueba.py 
+  442  clear
+  443  sudo ./Prueba.py 
+  444  clear
+  445  sudo vi Prueba.py 
+  446  sudo ./Prueba.py 
+  447  sudo vi Prueba.py 
+  448  clear
+  449  sudo ./Prueba.py 
+  450  vi hwintf.py
+  451  sudo vi hwintf.py
+  452  clear
+  453  chmod +x hwintf.py 
+  454  sudo chmod +x hwintf.py 
+  455  clear
+  456  sudo ./hwintf.py 
+  457  sudo vi hwintf.py
+  458  sudo ./hwintf.py 
+  459  sudo vi hwintf.py
+  460  sudo ./hwintf.py 
+  461  clear
+  462  sudo ./hwintf.py 
+  463  clear
+  464  sudo ./hwintf.py 
+  465  clear
+  466  sudo ./hwintf.py p3p1
+  467  sudo ./hwintf.py
+  468  clear
+  469  sudo ./hwintf.py
+  470  clear
+  471  sudo ./hwintf.py
+  472  clear
+  473  sudo ./hwintf.py
+  474  clear
+  475  sudo vi hwintf.py 
+  476  clear
+  477  sudo ./hwintf.py
+  478  clear
+  479  sudo vi hwintf.py 
+  480  clear
+  481  sudo ./hwintf.py
+  482  sudo vi hwintf.py 
+  483  clear
+  484  sudo ./hwintf.py p2p1
+  485  ls
+  486  cd Prueba\ mininet/
+  487  scp hwintf.py 172.16.17.54:~/Prueba\ mininet/
+  488  scp hwintf.py student@172.16.17.54:~/Prueba\ mininet/
+  489  sudo scp hwintf.py student@172.16.17.54:~/Prueba\ mininet/
+  490  sudo scp ./hwintf.py student@172.16.17.54:~/Prueba\ mininet/
+  491  sudo scp ./hwintf.py student@172.16.17.54:~/Prueba_mininet/
+  492  cd ..
+  493  rm -rf Prueba\ mininet/
+  494  sudo rm -rf Prueba\ mininet/
+  495  ls
+  496  cd Setup/
+  497  ls
+  498  cd ..
+  499  ls -la /opt/VNF/images
+  500  sudo poweroff
+  501  sudo ovs-vsctl show
+  502  sudo ovs-vsctl add-port ovs-br0 p2p1
+  503  ls
+  504  sudo addbr br0
+  505  sudo brctl addbr br0
+  506  sudo ovs-vsctl add-br ovs-br0
+  507  sudo ovs-vsctl add-port ovs-br0 br0
+  508  sudo ovs-vsctl show
+  509  sudo ovs-vsctl add-port ovs-br0 p3p1
+  510  sudo ovs-vsctl help
+  511  sudo ovs-vsctl --help
+  512  sudo ovs-vsctl set-controller ovs-br0 tcp:192.168.0.111:6633
+  513  sudo ovs-vsctl show
+  514  ls
+  515  rm -rf Prueba.py 
+  516  sudo chmod +x hwintf.py 
+  517  sudo ./hwintf.py br0
+  518  sudo vi hwintf.py 
+  519  sudo ./hwintf.py br0
+  520  sudo ./hwintf.py p2p1
+  521  sudo ovs-vsctl del-port ovs-br0 br0
+  522  sudo ovs-vsctl ahow
+  523  sudo ovs-vsctl show
+  524  sudo ovs-vsctl del-br ovs-br0
+  525  sudo ovs-vsctl show
+  526  ls
+  527  rm hwintf.py 
+  528  exit
+  529  ls
+  530  cd Setup/
+  531  ls
+  532  cd ..
+  533  cd ../stack/
+  534  ls
+  535  cd ..
+  536  cd student/
+  537  sudo virsh list
+  538  sudo poweroff
+  539  sudo net.sh 9
+  540  ifconfig
+  541  exit
+  542  ping www.google.com
+  543  wget http://172.16.17.3/master
+  544  ll
+  545  pwd
+  546  history36  ip addr
+   37  sudo vim /opt/master_NFVSDN/conffiles/interfaces 
+   38  dmesg 
+   39  sudo mount -t auto /dev/sdb1 /mnt/
+   40  cp -p /mnt/prueba /tmp/
+   41  sudo umount /mnt 
+   42  cd /tmp/
+   43  less prueba 
+   44  chmod +x prueba 
+   45  ./prueba 
+   46  sudo su -
+   47  ip addr
+   48  less /etc/network/interfaces
+   49  less /opt/master_NFVSDN/conffiles/interfaces 
+   50  ls -l /opt/master_NFVSDN/conffiles/interfaces 
+   51  sudo start master-init-clean
+   52  sudo initctl list
+   53  init-checkconf .d /etc/init/master-clean-init.conf 
+   54  sudo cp -p /opt/master_NFVSDN/conffiles/interfaces /etc/network/
+   55  sudo reboot
+   56  clear
+   57  ip addr em1
+   58  ip addr | grep em1
+   59  clear
+   60  ifconfig
+   61  ifconfig em1
+   62  exit
+   63  ip addr
+   64  ls /usr/local/bin/
+   65  sudo ip addr add 172.16.17.11/24 dev em1
+   66  ip addr
+   67  sudo mount -t auto /dev/sdb1 /mnt/
+   68  sudo cp -p /mnt/escenario_openMANO/generic.img /opt/VNF/
+   69  cd /opt/
+   70  ls
+   71  cd VNF/
+   72  sudo mkdir shared
+   73  sudo mv generic.img shared/
+   74  ls -l
+   75  cd shared/
+   76  ls
+   77  ls -l
+   78  cd
+   79  sudo umount /mnt 
+   80  ip addr
+   81  ip addr show dev em1
+   82  ps auxww | grep libvirt
+   83  sudo su openvim
+   84  less /etc/libvirt/libvirtd.conf 
+   85  less /etc/group
+   86  /usr/libexec/qemu-kvm -h
+   87  ip addr
+   88  sudo reboot
+   89  ip addr
+   90  ls -l /opt/VNF/
+   91  cd /opt/VNF/shared/
+   92  ls
+   93  ls -l
+   94  cd ..
+   95  ls
+   96  cd images
+   97  ls -l
+   98  chmod +w openvim
+   99  chmod +w . openvim
+  100  chmod +w .
+  101  cd ..
+  102  sudo chmod +w images
+  103  ls -l
+  104  cd images
+  105  ls -l
+  106  ifconfig
+  107  ifconfig em1
+  108  config em1 172.16.17.11/24
+  109  ifconfig em1 172.16.17.11/24
+  110  sudo ifconfig em1 172.16.17.11/24
+  111  ifconfig em1
+  112  kvm ok
+  113  kvm-ok 
+  114  ls -l
+  115  cd ..
+  116  ls -l
+  117  ls -l /var/lib/libvirt/images/
+  118  sudo chown -R root:admin /var/lib/libvirt/images
+  119  sudo chmod g+rwx /var/lib/libvirt/images
+  120  ls -l /var/lib/libvirt/images/
+  121  ls -l /opt/VNF/images
+  122  less /etc/group
+  123  ls -l /etc/libvirt/
+  124  sudo visudo
+  125  ip addr
+  126  ip addr show dev em1
+  127  ping 172.16.17.51
+  128  dme
+  129  dmesg 
+  130  sudo less /var/log/syslog 
+  131  sudo mount -t auto /dev/sdb1 /mnt/
+  132  sudo cp -p /mnt/escenario_openMANO/generic.img /opt/VNF/shared/
+  133  sudo umount /mnt 
+  134  cd /opt/VNF/shared/
+  135  ls
+  136  ls -l generic.img 
+  137  ip addr
+  138  ip addr show dev em1
+  139  init-checkconf /etc/init/master-clean-init.conf 
+  140  less /etc/init/master-clean-init.conf 
+  141  init-checkconf /etc/init/master-clean-init.conf 
+  142  less /etc/init/dmesg.conf 
+  143  sudo vim /etc/init/master-clean-init.conf 
+  144  init-checkconf /etc/init/master-clean-init.conf 
+  145  sudo vim /etc/network/interfaces
+  146  sudo reboot
+  147  ip addr
+  148  init-checkconf /etc/init/master-clean-init.conf 
+  149  init-checkconf -d /etc/init/master-clean-init.conf 
+  150  less /etc/network/interfaces
+  151  sudo vim /etc/init/master-clean-init.conf 
+  152  less /etc/init/network-interface.conf 
+  153  less /etc/init/networking.conf 
+  154  sudo vim /etc/init/master-clean-init.conf 
+  155  less /etc/init/networking.conf 
+  156  sudo vim /etc/init/master-clean-init.conf 
+  157  sudo vim /etc/network/interfaces
+  158  sudo reboot
+  159  sudo mv /tmp/net.sh /usr/local/bin/
+  160  ls -l /usr/local/bin/net.sh 
+  161  sudo chown root.root /usr/local/bin/net.sh 
+  162  exit
+  163  ip addr
+  164  ip addr show em1
+  165  locate
+  166  locate net.sh
+  167  sudo ip addr add 172.16.17.11/24 dev em1
+  168  sudo ip ro add default via 172.16.17.1
+  169  sudo vim /etc/resolv.conf 
+  170  ping www.google.com
+  171  sudo net.sh 
+  172  sudo net.sh 21
+  173  sudo net.sh 12
+  174  ip addr
+  175  ping www.google.com
+  176  ip addr sh dev em1
+  177  sudo net.sh 1
+  178  ip addr sh dev em1
+  179  exit
+  180  ip addr
+  181  ip ro
+  182  sudo reboot; exit
+  183  ip addr
+  184  exit
+  185  sudo poweroff
+  186  sudo cat /var/log/access.log
+  187  last
+  188  last | more
+  189  sudo poweroff 
+  190  cat /etc/hostname 
+  191  man hostname
+  192  sudo vim /usr/local/bin/net.sh 
+  193  sudo net.sh 11
+  194  sudo vim /usr/local/bin/net.sh 
+  195  sudo net.sh 11
+  196  sudo vim /usr/local/bin/net.sh 
+  197  sudo net.sh 11
+  198  sudo vim /usr/local/bin/net.sh 
+  199  man hostname
+  200  less /etc/hostname 
+  201  sudo hostname mport11
+  202  hostname --help
+  203  hostname
+  204  exit
+  205  ls
+  206  sudo vim /usr/local/bin/net.sh 
+  207  sudo vim /etc/init/master-clean-init.conf 
+  208  sudo cp -p /opt/master_NFVSDN/conffiles/interfaces /opt/master_NFVSDN/conffiles/hostname
+  209  sudo vim /opt/master_NFVSDN/conffiles/interfaces 
+  210  sudo vim /opt/master_NFVSDN/conffiles/hostname 
+  211  sudo vim /etc/hosts
+  212  sudo cp -p /etc/hosts /opt/master_NFVSDN/conffiles/
+  213  sudo vim /etc/init/master-clean-init.conf 
+  214  sudo vim /usr/local/bin/net.sh 
+  215  sudo vim /etc/hosts
+  216  sudo vim /usr/local/bin/net.sh 
+  217  sudo mv /usr/local/bin/net.sh /usr/local/sbin/
+  218  sudo net.sh 11
+  219  ls
+  220  sudo ls
+  221  less /etc/hosts
+  222  less /opt/master_NFVSDN/conffiles/hosts 
+  223  less /opt/master_NFVSDN/conffiles/hostname 
+  224  exit
+  225  sudo net.sh
+  226  sudo net.sh 11
+  227  ip addr
+  228  sudo apt-get install vlc
+  229  ip ro
+  230  ping www.google.com
+  231  su stack
+  232  vlc --version
+  233  exit
+  234  ip addr | less
+  235  sudo vim /etc/init/failsafe.conf 
+  236  exit
+  237  cd de
+  238  exit
+  239  sudo net.sh 20
+  240  ping www.google.com
+  241  ip addr show dev em1
+  242  exit
+  243  sudo net.sh 12
+  244  ip addr
+  245  net.sh 4
+  246  sudo net.sh 4
+  247  ifconfig em1
+  248  exit
+  249  clear
+  250  exit
+  251  ls
+  252  cd Prueba\ mininet/
+  253  sudo ./Prueba.py 
+  254  clear
+  255  exit
+  256  ifconfig br0
+  257  ifconfig br0
+  258  cd Prueba\ mininet/
+  259  ryu-manager SimpleSwitch.py
+  260  ext
+  261  exit
+  262  ovs-vsctl show
+  263  sudo ovs-vsctl show
+  264  sudo ovs-vsctl list-br
+  265  ls
+  266  cd ../stack/
+  267  ls
+  268  cd ../student/
+  269  git clone git://github.com/mininet/mininet
+  270  ls
+  271  mkdir Setup
+  272  rm -rf mininet/
+  273  cd Setup/
+  274  git clone git://github.com/mininet/mininet
+  275  ls /media/
+  276  ls /media/cdrom/
+  277  cd mininet/
+  278  ./util/install.sh 
+  279  sudo mn
+  280  sudo ovs-vsctl add-br br0
+  281  sudo ovs-vsctl list-br
+  282  ifconfig p3p1
+  283  ovs-vsctl add-port br0 p3p1
+  284  sudo ovs-vsctl add-port br0 p3p1
+  285  sudo ovs-vsctl list-br
+  286  sudo ovs-vsctl show
+  287  ifconfig br0
+  288  ifconfig p3p1
+  289  sudo ifconfig p3p1up
+  290  sudo ifconfig p3p1 up
+  291  exit
+  292  arp -a
+  293  ping 10.0.0.1
+  294  ping 10.0.0.2
+  295  clear
+  296  sudo fdisk -l
+  297  ls /mnt
+  298  ls /
+  299  ls/mnt
+  300  sudo mount -t /dev/sdb1 /mnt
+  301  sudo mount -t vfat /dev/sdb1 /mnt
+  302  cd /mnt
+  303  ls
+  304  sudo cp Prueba\ mininet/ ~
+  305  ls ~
+  306  sudo cp -rf Prueba\ mininet/ ~
+  307  ls ~
+  308  cd ~
+  309  sudo umount /mnt
+  310  ls /mnt
+  311  ls /etc
+  312  ls /etc/openvswitch
+  313  la /etc/openvswitch
+  314  ls -la /etc/openvswitch
+  315  ls -la /etc/openvswitch-controller
+  316  cd Prueba\ mininet/
+  317  ryu-manager SimpleSwitch.py
+  318  ifconfig br0
+  319  ovs-vsctl show
+  320  sudo ovs-vsctl show
+  321  sudo ovs-vsctl set-controller br-int tcp:127.0.0.1:6633
+  322  sudo ovs-vsctl set-controller br0 tcp:127.0.0.1:6633
+  323  sudo ovs-vsctl show
+  324  sudo ovs-vsctl set-controller br0 tcp:172.16.17.54:6633
+  325  sudo ovs-vsctl show
+  326  sudo ifconfig p3p1 10.0.1.14
+  327  ping 10.0.1.11
+  328  route -n
+  329  sudo ifconfig p3p1 del 10.0.1.14
+  330  route -n
+  331  sudo ifconfig p3p1 down
+  332  route -n
+  333  sudo ifconfig p3p1 up
+  334  route -n
+  335  sudo ip del 10.0.1.14 dev p3p1
+  336  sudo ip addr del 10.0.1.14 dev p3p1
+  337  route -n
+  338  sudo ovs-vsctl --help
+  339  sudo ovs-vsctl add-port br0 p2p1
+  340  sudo ovs-vsctl show
+  341  sudo ifconfig p3p1 10.0.1.14
+  342  ifconfig p3p1
+  343  sudo ovs-vsctl del-port br0 p2p1
+  344  sudo ovs-vsctl show
+  345  sudo ifconfig p3p1 10.0.0.3
+  346  sudo ovs-vsctl show
+  347  clear
+  348  sudo ovs-vsctl show
+  349  sudo ovs-vsctl set-controller br0 tcp:172.16.17.54:6633
+  350  sudo ovs-vsctl show
+  351  clear
+  352  sudo ovs-vsctl show
+  353  ifconfig p2p1
+  354  ovs-vsctl show
+  355  sudo ovs-vsctl show
+  356  sudo ovs-vsctl set-controller br0 tcp:172.16.17.51:6653
+  357  sudo ovs-vsctl show
+  358  cd /opt/VNF/
+  359  cd images
+  360  chown openvim .
+  361  sudo chown openvim .
+  362  ls
+  363  sudo chown student .
+  364  ls
+  365  sudo chown openvim .
+  366  ping 172.16.17.51
+  367  clear
+  368  ifconfig p2p1
+  369  ovs-vsctl show
+  370  show ovs-vsctl show
+  371  sudo ovs-vsctl show
+  372  cd Prueba\ mininet/
+  373  clear
+  374  sudo ./hwintf.py p2p1
+  375  sudo mn -c
+  376  clear
+  377  sudo ./hwintf.py p2p1
+  378  clear
+  379  ifconfig p3p1
+  380  sudo ip addr del 10.0.0.3 dev p3p1
+  381  ifconfig p3p1
+  382  sudo ovs-vsctl show
+  383  ifconfig br0
+  384  sudo ovs-vsctl add-br br0
+  385  sudo ovs-vsctl add-port br0 p2p1
+  386  sudo ovs-vsctl show
+  387  sudo ovs-vsctl add-port br0 p3p1
+  388  sudo ovs-vsctl show
+  389  sudo ovs-vsctl help
+  390  sudo ovs-vsctl --help
+  391  sudo ovs-vsctl set-controller br0 tcp:172.16.17.54:6633
+  392  sudo ovs-vsctl show
+  393  clear
+  394  sudo ./hwintf.py p3p1
+  395  sudo ovs-vsctl del-port br0 p2p1
+  396  sudo ./hwintf.py p2p1
+  397  sudo brctl list
+  398  sudo brctl show
+  399  sudo brctl addbr br1
+  400  sudo brctl show
+  401  sudo brctl addif br1 p2p1
+  402  sudo brctl show
+  403  clear
+  404  sudo ./hwintf.py br1
+  405  ovs-vsctl show
+  406  sudo ovs-vsctl show
+  407  sudo ovs-vsctl del-br br0
+  408  sudo ovs-vsctl show
+  409  brctl show
+  410  brctl delbr br1
+  411  sudo brctl delbr br1
+  412  sudo brctl delif br1 p2p1
+  413  sudo brctl delbr br1
+  414  brctl show
+  415  sudo ifconfig br1 down
+  416  sudo brctl delbr br1
+  417  brctl show
+  418  vi hwintf.py 
+  419  cd Prueba\ mininet/
+  420  clear
+  421  ./Prueba.py 
+  422  sudo ./Prueba.py 
+  423  gedit Prueba.py 
+  424  vi Prueba.py 
+  425  sudo ./Prueba.py 
+  426  vi Prueba.py 
+  427  sudo ./Prueba.py 
+  428  clear
+  429  vi Prueba.py 
+  430  sudo chmod +w Prueba.py 
+  431  vi Prueba.py 
+  432  ls -la Prueba.py 
+  433  sudo vi Prueba.py 
+  434  sudo ./Prueba.py 
+  435  sudo vi Prueba.py 
+  436  sudo ./Prueba.py 
+  437  sudo vi Prueba.py 
+  438  sudo ./Prueba.py 
+  439  clear
+  440  sudo ./Prueba.py 
+  441  sudo vi Prueba.py 
+  442  clear
+  443  sudo ./Prueba.py 
+  444  clear
+  445  sudo vi Prueba.py 
+  446  sudo ./Prueba.py 
+  447  sudo vi Prueba.py 
+  448  clear
+  449  sudo ./Prueba.py 
+  450  vi hwintf.py
+  451  sudo vi hwintf.py
+  452  clear
+  453  chmod +x hwintf.py 
+  454  sudo chmod +x hwintf.py 
+  455  clear
+  456  sudo ./hwintf.py 
+  457  sudo vi hwintf.py
+  458  sudo ./hwintf.py 
+  459  sudo vi hwintf.py
+  460  sudo ./hwintf.py 
+  461  clear
+  462  sudo ./hwintf.py 
+  463  clear
+  464  sudo ./hwintf.py 
+  465  clear
+  466  sudo ./hwintf.py p3p1
+  467  sudo ./hwintf.py
+  468  clear
+  469  sudo ./hwintf.py
+  470  clear
+  471  sudo ./hwintf.py
+  472  clear
+  473  sudo ./hwintf.py
+  474  clear
+  475  sudo vi hwintf.py 
+  476  clear
+  477  sudo ./hwintf.py
+  478  clear
+  479  sudo vi hwintf.py 
+  480  clear
+  481  sudo ./hwintf.py
+  482  sudo vi hwintf.py 
+  483  clear
+  484  sudo ./hwintf.py p2p1
+  485  ls
+  486  cd Prueba\ mininet/
+  487  scp hwintf.py 172.16.17.54:~/Prueba\ mininet/
+  488  scp hwintf.py student@172.16.17.54:~/Prueba\ mininet/
+  489  sudo scp hwintf.py student@172.16.17.54:~/Prueba\ mininet/
+  490  sudo scp ./hwintf.py student@172.16.17.54:~/Prueba\ mininet/
+  491  sudo scp ./hwintf.py student@172.16.17.54:~/Prueba_mininet/
+  492  cd ..
+  493  rm -rf Prueba\ mininet/
+  494  sudo rm -rf Prueba\ mininet/
+  495  ls
+  496  cd Setup/
+  497  ls
+  498  cd ..
+  499  ls -la /opt/VNF/images
+  500  sudo poweroff
+  501  sudo ovs-vsctl show
+  502  sudo ovs-vsctl add-port ovs-br0 p2p1
+  503  ls
+  504  sudo addbr br0
+  505  sudo brctl addbr br0
+  506  sudo ovs-vsctl add-br ovs-br0
+  507  sudo ovs-vsctl add-port ovs-br0 br0
+  508  sudo ovs-vsctl show
+  509  sudo ovs-vsctl add-port ovs-br0 p3p1
+  510  sudo ovs-vsctl help
+  511  sudo ovs-vsctl --help
+  512  sudo ovs-vsctl set-controller ovs-br0 tcp:192.168.0.111:6633
+  513  sudo ovs-vsctl show
+  514  ls
+  515  rm -rf Prueba.py 
+  516  sudo chmod +x hwintf.py 
+  517  sudo ./hwintf.py br0
+  518  sudo vi hwintf.py 
+  519  sudo ./hwintf.py br0
+  520  sudo ./hwintf.py p2p1
+  521  sudo ovs-vsctl del-port ovs-br0 br0
+  522  sudo ovs-vsctl ahow
+  523  sudo ovs-vsctl show
+  524  sudo ovs-vsctl del-br ovs-br0
+  525  sudo ovs-vsctl show
+  526  ls
+  527  rm hwintf.py 
+  528  exit
+  529  ls
+  530  cd Setup/
+  531  ls
+  532  cd ..
+  533  cd ../stack/
+  534  ls
+  535  cd ..
+  536  cd student/
+  537  sudo virsh list
+  538  sudo poweroff
+  539  sudo net.sh 9
+  540  ifconfig
+  541  exit
+  542  ping www.google.com
+  543  wget http://172.16.17.3/master
+  544  ll
+  545  pwd
+  546  history
