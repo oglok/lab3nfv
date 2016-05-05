@@ -1,0 +1,8 @@
+network:
+    admin_state_up: true
+    name: bridge_con3
+    provider:physical: bridge:bridgecon3
+    shared: true
+    status: ACTIVE
+    type: bridge_man
+
